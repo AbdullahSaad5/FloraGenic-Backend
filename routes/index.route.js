@@ -1,8 +1,9 @@
 var express = require("express");
 var router = express.Router();
+const verifyJWT = require("../middleware/jwt-verify.mw");
 
 /* GET home page. */
-router.get("/", function (req, res, next) {
+router.get("/", verifyJWT, function (req, res, next) {
   res.json({ message: "Hello World" });
 });
 

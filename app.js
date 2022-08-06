@@ -16,7 +16,7 @@ const app = express();
 // Database Setup
 mongoose.connect("mongodb://localhost:27017/FloraGenic", (err, db) => {
   if (err) throw err;
-  console.log("DB Connected");
+  console.log("Connection with Database established")
 });
 
 app.use(logger("dev"));
@@ -26,7 +26,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 // Side effect loading of passport strategies
-require("./middlewares/passport-strategies.mw");
+require("./middleware/passport-strategies.mw");
 
 // Passport Setup
 app.use(passport.initialize());
