@@ -8,15 +8,14 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 
 // Importing Routers
-const indexRouter = require("./routes/index.route");
-const usersRouter = require("./routes/users.route");
+const routes = require("./routes/index.route");
 
 const app = express();
 
 // Database Setup
 mongoose.connect("mongodb://localhost:27017/FloraGenic", (err, db) => {
   if (err) throw err;
-  console.log("Connection with Database established")
+  console.log("Connection with Database established");
 });
 
 app.use(logger("dev"));
@@ -32,8 +31,7 @@ require("./middleware/passport-strategies.mw");
 app.use(passport.initialize());
 
 // Router Setup
-app.use("/", indexRouter);
-app.use("/users", usersRouter);
+app.use("/api/", routes);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

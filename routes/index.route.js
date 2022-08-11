@@ -1,10 +1,12 @@
 var express = require("express");
 var router = express.Router();
-const verifyJWT = require("../middleware/jwt-verify.mw");
+const authRouter = require("./auth.route");
+const usersRouter = require("./users.route");
 
-/* GET home page. */
-router.get("/", verifyJWT, function (req, res, next) {
-  res.json({ message: "Hello World" });
+router.get("/", function (req, res, next) {
+  res.send("respond with a resource");
 });
+router.use("/auth", authRouter);
+router.use("/users", usersRouter);
 
 module.exports = router;
