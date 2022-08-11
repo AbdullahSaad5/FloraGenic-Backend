@@ -15,8 +15,6 @@ router.post("/signup", function (req, res, next) {
   });
 });
 
-<h1 className="text"></h1>;
-
 router.post(
   "/login",
   passport.authenticate("local", { session: false }),
