@@ -1,6 +1,6 @@
-var express = require("express");
-var router = express.Router();
-var Customer = require("../models/customer.model");
+const express = require("express");
+const router = express.Router();
+const Customer = require("../models/customer.model");
 
 /* GET all customers with their auth data. */
 router.get("/", function (req, res, next) {
