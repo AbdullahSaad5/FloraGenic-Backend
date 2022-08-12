@@ -1,7 +1,13 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const vendorSchema = new Schema({
+const customerSchema = new Schema({
+  userID: {
+    type: Schema.Types.ObjectId,
+    ref: "User",
+    required: true,
+    unique: true,
+  },
   name: {
     type: String,
     required: true,
@@ -25,6 +31,7 @@ const vendorSchema = new Schema({
   createdAt: {
     type: Date,
     default: Date.now,
+    immutable: true,
   },
   updatedAt: {
     type: Date,
@@ -50,4 +57,9 @@ const vendorSchema = new Schema({
   ],
 });
 
-module.exports = mongoose.model("Vendor", vendorSchema);
+customerSchema.pre("findOneAndUpdate", function (next) {
+  this.update({}, { $set: { updatedAt: Date.now() } });
+  next();
+});
+
+module.exports = mongoose.model("Customer", customerSchema);

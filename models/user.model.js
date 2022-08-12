@@ -18,6 +18,11 @@ const userSchema = new Schema({
     type: Boolean,
     default: false,
   },
+  userType: {
+    type: String,
+    default: "customer",
+    required: true,
+  },
 });
 
 userSchema.pre("save", function (next) {
