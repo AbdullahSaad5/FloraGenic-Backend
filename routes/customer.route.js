@@ -43,23 +43,33 @@ router.get("/search/:name", function (req, res, next) {
 
 // Add new customer
 router.post("/", (req, res, next) => {
-  const customer = new Customer({
-    userID: req.body.userID,
-    name: req.body.name,
-    dob: req.body.dob,
-    nationality: req.body.nationality,
-    phoneNumber: req.body.phoneNumber,
-    gender: req.body.gender,
-    addresses: [],
-    payments: [],
-  });
-
-  customer.save((err, customer) => {
+  User.findById(req.body.userID, (err, user) => {
     if (err) {
-      console.log(err);
       return next(err);
+    } else if (!user) {
+      return next("User not found");
+    } else if (user.userType !== "customer") {
+      return next("User is not customer");
     }
-    res.json(customer);
+
+    const customer = new Customer({
+      userID: req.body.userID,
+      name: req.body.name,
+      dob: req.body.dob,
+      nationality: req.body.nationality,
+      phoneNumber: req.body.phoneNumber,
+      gender: req.body.gender,
+      addresses: [],
+      payments: [],
+    });
+
+    customer.save((err, customer) => {
+      if (err) {
+        console.log(err);
+        return next(err);
+      }
+      res.json(customer);
+    });
   });
 });
 
@@ -88,7 +98,19 @@ router.delete("/:id", (req, res, next) => {
     if (err) {
       return next(err);
     }
-    res.json(customer);
+
+    if (!customer) {
+      return next("Customer not found");
+    }
+
+    User.findByIdAndRemove(customer.userID, (err, user) => {
+      if (err) {
+        next(err);
+      }
+      res.json({
+        message: "Customer Deleted Successfully",
+      });
+    });
   });
 });
 
