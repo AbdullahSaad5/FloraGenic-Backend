@@ -28,6 +28,11 @@ const customerSchema = new Schema({
     type: String,
     required: true,
   },
+  image: {
+    type: String,
+    default:
+      "https://res.cloudinary.com/dzqbzqgqw/image/upload/v1589788981/default_avatar_qxqzqr.png",
+  },
   createdAt: {
     type: Date,
     default: Date.now,

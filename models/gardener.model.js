@@ -16,7 +16,7 @@ const gardenerSchema = new Schema({
     required: true,
     unique: true,
   },
-  cnic: {
+  CNIC: {
     type: String,
     required: true,
     unique: true,

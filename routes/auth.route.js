@@ -5,8 +5,8 @@ const User = require("../models/user.model");
 const jwt = require("jsonwebtoken");
 
 router.post("/signup", function (req, res, next) {
-  const { email, password } = req.body;
-  const user = new User({ email, password, bannedStatus: false });
+  const { email, password, userType } = req.body;
+  const user = new User({ email, password, userType });
   user.save((err, user) => {
     if (err) {
       return next(err);
@@ -25,6 +25,7 @@ router.post(
           id: req.user._id,
           email: req.user.email,
           bannedStatus: req.user.bannedStatus,
+          userType: req.user.userType,
         },
         "secret"
       );

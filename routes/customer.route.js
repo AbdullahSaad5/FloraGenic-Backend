@@ -5,7 +5,7 @@ const Customer = require("../models/customer.model");
 /* GET all customers with their auth data. */
 router.get("/", function (req, res, next) {
   Customer.find()
-    .populate("userID", "email userType")
+    .populate("userID", "email")
     .exec(function (err, customers) {
       if (err) {
         console.log(err);
