@@ -6,6 +6,8 @@ const Customer = require("../models/customer.model");
 router.get("/", function (req, res, next) {
   Customer.find()
     .populate("userID", "email")
+    .populate("addresses")
+    // .populate("payments")
     .exec(function (err, customers) {
       if (err) {
         console.log(err);
@@ -19,6 +21,8 @@ router.get("/", function (req, res, next) {
 router.get("/:id", function (req, res, next) {
   Customer.findById(req.params.id)
     .populate("userID", "email")
+    .populate("addresses")
+    // .populate("payments")
     .exec(function (err, customer) {
       if (err) {
         console.log(err);
@@ -32,6 +36,8 @@ router.get("/:id", function (req, res, next) {
 router.get("/search/:name", function (req, res, next) {
   Customer.find({ name: { $regex: req.params.name, $options: "i" } })
     .populate("userID", "email")
+    .populate("addresses")
+    // .populate("payments")
     .exec(function (err, customers) {
       if (err) {
         console.log(err);

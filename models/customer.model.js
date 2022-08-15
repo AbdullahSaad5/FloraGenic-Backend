@@ -44,20 +44,14 @@ const customerSchema = new Schema({
   },
   addresses: [
     {
-      addressID: {
-        type: Schema.Types.ObjectId,
-        ref: "Address",
-        required: true,
-      },
+      type: Schema.Types.ObjectId,
+      ref: "Address",
     },
   ],
   payments: [
     {
-      paymentID: {
-        type: Schema.Types.ObjectId,
-        ref: "Payment",
-        required: true,
-      },
+      type: Schema.Types.ObjectId,
+      ref: "Payment",
     },
   ],
 });

@@ -2,15 +2,15 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const addressSchema = new Schema({
-  addressName: {
+  name: {
     type: String,
     required: true,
   },
-  addressLocation: {
+  location: {
     type: String,
     required: true,
   },
-  addressCity: {
+  city: {
     type: String,
     required: true,
   },
