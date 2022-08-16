@@ -1,5 +1,3 @@
-// NurseryName, title, bio, address, contactNumber, emailaddress, payment, products
-
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
@@ -13,8 +11,7 @@ const nurserySchema = new Schema({
     required: true,
   },
   address: {
-    type: Schema.Types.ObjectId,
-    ref: "Address",
+    type: String,
     required: true,
   },
   openingHours: {
@@ -31,11 +28,11 @@ const nurserySchema = new Schema({
   },
   contactNumber: {
     type: String,
-    required: true,
+    default: "",
   },
   emailAddress: {
     type: String,
-    required: true,
+    default: "",
   },
   images: [
     {

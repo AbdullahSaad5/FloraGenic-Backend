@@ -40,7 +40,7 @@ router.get("/search/:name", (req, res, next) => {
 /* Add a new product */
 router.post("/", (req, res, next) => {
   // TODO: Verify Nursery ID before adding the product
-  const { nurseryID, name, price, description, category, stock, image } =
+  const { nurseryID, name, price, description, category, stock, image, tags } =
     req.body;
 
   const product = new Product({
@@ -52,7 +52,7 @@ router.post("/", (req, res, next) => {
     stock,
     image,
     reviews: [],
-    tags: req.body.tags ? req.body.tags : [],
+    tags,
   });
 
   product.save((err, product) => {

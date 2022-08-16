@@ -6,6 +6,7 @@ const adminRouter = require("./admin.route");
 const addressRouter = require("./address.route");
 const productRouter = require("./product.route");
 const cartRouter = require("./cart.route");
+const nurseryRouter = require("./nursery.route");
 
 router.get("/", function (req, res, next) {
   res.send("respond with a resource");
@@ -16,5 +17,6 @@ router.use("/admin", adminRouter);
 router.use("/address", addressRouter);
 router.use("/products", productRouter);
 router.use("/cart", cartRouter);
+router.use("/nurseries", nurseryRouter);
 
 module.exports = router;

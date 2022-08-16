@@ -33,12 +33,13 @@ router.post("/:customerID", (req, res, next) => {
 });
 
 /* Update product count in a cart */
-router.patch("/:customerID/:productID", (req, res, next) => {
-  const { customerID, productID } = req.params;
+router.patch("/:itemID", (req, res, next) => {
+  const { itemID } = req.params;
+  const { quantity, totalPrice } = req.body;
 
-  CartItem.findOneAndUpdate(
-    { userID: customerID, productID: productID },
-    { $set: { quantity: req.body.quantity, totalPrice: req.body.totalPrice } },
+  CartItem.findByIdAndUpdate(
+    itemID,
+    { $set: { quantity, totalPrice } },
     { new: true },
     (err, cartItem) => {
       if (err) {
@@ -50,12 +51,9 @@ router.patch("/:customerID/:productID", (req, res, next) => {
 });
 
 /* Remove a product from a cart */
-router.delete("/:customerID/:productID", (req, res, next) => {
-  const { customerID, productID } = req.params;
-  CartItem.findOneAndDelete({
-    userID: customerID,
-    productID,
-  }).exec((err, product) => {
+router.delete("/:itemID", (req, res, next) => {
+  const { itemID } = req.params;
+  CartItem.findByIdAndDelete(itemID, (err, product) => {
     if (err) {
       return next(err);
     }
