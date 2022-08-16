@@ -20,12 +20,14 @@ router.post(
   passport.authenticate("local", { session: false }),
   function (req, res, next) {
     try {
+      const { id, email, bannedStatus, userType } = req.user;
+
       const token = jwt.sign(
         {
-          id: req.user._id,
-          email: req.user.email,
-          bannedStatus: req.user.bannedStatus,
-          userType: req.user.userType,
+          id,
+          email,
+          bannedStatus,
+          userType,
         },
         "secret"
       );

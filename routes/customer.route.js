@@ -58,13 +58,15 @@ router.post("/", (req, res, next) => {
       return next("User is not customer");
     }
 
+    const { userID, name, dob, nationality, phoneNumber, gender } = req.body;
+
     const customer = new Customer({
-      userID: req.body.userID,
-      name: req.body.name,
-      dob: req.body.dob,
-      nationality: req.body.nationality,
-      phoneNumber: req.body.phoneNumber,
-      gender: req.body.gender,
+      userID,
+      name,
+      dob,
+      nationality,
+      phoneNumber,
+      gender,
       addresses: [],
       payments: [],
     });

@@ -14,11 +14,13 @@ router.post("/:customerID", (req, res, next) => {
 
     const totalAddresses = customer.addresses.length;
 
+    const { name, location, city, setAsDefault } = req.body;
+
     const address = new Address({
-      name: req.body.name,
-      location: req.body.location,
-      city: req.body.city,
-      setAsDefault: totalAddresses === 0 ? true : req.body.setAsDefault,
+      name,
+      location,
+      city,
+      setAsDefault: totalAddresses === 0 ? true : setAsDefault,
     });
 
     address.save((err, address) => {

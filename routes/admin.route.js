@@ -59,11 +59,13 @@ router.post("/", (req, res, next) => {
       });
     }
 
+    const { userID, name, phone, CNIC } = req.body;
+
     const admin = new Admin({
-      userID: req.body.userID,
-      name: req.body.name,
-      phone: req.body.phone,
-      CNIC: req.body.CNIC,
+      userID,
+      name,
+      phone,
+      CNIC,
     });
 
     admin.save((err, admin) => {
