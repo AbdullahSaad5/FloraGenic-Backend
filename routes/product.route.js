@@ -71,7 +71,7 @@ router.patch("/:id", (req, res, next) => {
       $set: req.body,
     },
     {
-      $new: true,
+      new: true,
     },
     (err, product) => {
       if (err) {

@@ -79,7 +79,7 @@ router.patch("/:nurseryID", (req, res, next) => {
       $set: req.body,
     },
     {
-      $new: true,
+      new: true,
     },
     (err, nursery) => {
       if (err) {

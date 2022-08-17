@@ -15,7 +15,7 @@ router.get("/", (req, res, next) => {
 /* Search a skill */
 router.get("/search/:name", (req, res, next) => {
   const { name } = req.params;
-  Skill.find({ name }, (err, skills) => {
+  Skill.find({ name: { $regex: name, $options: "i" } }, (err, skills) => {
     if (err) {
       return next(err);
     }
@@ -23,8 +23,26 @@ router.get("/search/:name", (req, res, next) => {
   });
 });
 
+/* Add a new skill */
+router.post("/", (req, res, next) => {
+  const { name, description, experienceLevel } = req.body;
+
+  const skill = new Skill({
+    name,
+    description,
+    experienceLevel,
+  });
+
+  skill.save((err, skill) => {
+    if (err) {
+      return next(err);
+    }
+    res.json(skill);
+  });
+});
+
 /* Update a skill */
-router.get("/:skillID", (req, res, next) => {
+router.patch("/:skillID", (req, res, next) => {
   const { skillID } = req.params;
   Skill.findByIdAndUpdate(
     skillID,
@@ -32,7 +50,7 @@ router.get("/:skillID", (req, res, next) => {
       $set: req.body,
     },
     {
-      $new: true,
+      new: true,
     },
     (err, skill) => {
       if (err) {
@@ -53,3 +71,5 @@ router.delete("/:skillID", (req, res, next) => {
     res.json(skill);
   });
 });
+
+module.exports = router;
