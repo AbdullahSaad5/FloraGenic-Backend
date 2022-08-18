@@ -16,7 +16,7 @@ router.get("/", (req, res, next) => {
 router.get("/:gardenerID", (req, res, next) => {
   const { gardenerID } = req.params;
   Gardener.findById(gardenerID)
-    .populate("servicesx")
+    .populate("services")
     .populate("userID")
     .exec((err, gardener) => {
       if (err) {
