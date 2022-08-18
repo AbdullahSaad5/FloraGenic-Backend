@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const gardenerSchema = new Schema({
-  email: {
+  userID: {
     type: Schema.Types.ObjectId,
     ref: "User",
     required: true,
@@ -24,6 +24,7 @@ const gardenerSchema = new Schema({
   image: {
     type: String,
     required: true,
+    default: "https://i.imgur.com/QQHJY9A.png",
   },
   createdAt: {
     type: Date,
@@ -36,10 +37,15 @@ const gardenerSchema = new Schema({
   services: [
     {
       type: Schema.Types.ObjectId,
-      ref: "Service",
+      ref: "Skill",
       required: true,
     },
   ],
+});
+
+gardenerSchema.pre("findOneAndUpdate", function (next) {
+  this.update({}, { $set: { updatedAt: new Date() } });
+  next();
 });
 
 module.exports = mongoose.model("Gardener", gardenerSchema);

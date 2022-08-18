@@ -3,6 +3,17 @@ const router = express.Router();
 const Address = require("../models/address.model");
 const Customer = require("../models/customer.model");
 
+/* Get all addresses of a customer */
+router.get("/:customerID", async (req, res) => {
+  const { customerID } = req.params;
+  Address.find({ customerID }, (err, addresses) => {
+    if (err) {
+      return next(err);
+    }
+    res.json(addresses);
+  });
+});
+
 // Add new address
 router.post("/:customerID", (req, res, next) => {
   Customer.findById(req.params.customerID, (err, customer) => {

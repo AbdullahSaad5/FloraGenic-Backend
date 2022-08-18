@@ -9,6 +9,7 @@ const cartRouter = require("./cart.route");
 const nurseryRouter = require("./nursery.route");
 const tagRouter = require("./tag.route");
 const skillRouter = require("./skill.route");
+const gardenerRouter = require("./gardener.route");
 
 router.get("/", function (req, res, next) {
   res.send("respond with a resource");
@@ -22,5 +23,6 @@ router.use("/cart", cartRouter);
 router.use("/nurseries", nurseryRouter);
 router.use("/tags", tagRouter);
 router.use("/skills", skillRouter);
+router.use("/gardeners", gardenerRouter);
 
 module.exports = router;
