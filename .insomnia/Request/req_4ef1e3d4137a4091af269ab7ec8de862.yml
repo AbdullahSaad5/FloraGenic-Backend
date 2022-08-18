@@ -1,0 +1,21 @@
+_id: req_4ef1e3d4137a4091af269ab7ec8de862
+type: Request
+parentId: fld_0942bd717a9f448990c6dc6cda9fd45d
+modified: 1660559121476
+created: 1660558126287
+url: http://localhost:3000/api/admin/search/abdullah
+name: Find Admin by Name
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660231301467
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

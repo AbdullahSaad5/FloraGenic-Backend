@@ -1,0 +1,21 @@
+_id: req_60e5052417f0473da73318c5efa19602
+type: Request
+parentId: fld_9362858a81024d20a666de019f0cd594
+modified: 1660722479706
+created: 1660721872022
+url: http://localhost:3000/api/tags/
+name: Get All Tags
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660212314789
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

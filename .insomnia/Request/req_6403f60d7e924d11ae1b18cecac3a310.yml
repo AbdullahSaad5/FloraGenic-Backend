@@ -1,0 +1,21 @@
+_id: req_6403f60d7e924d11ae1b18cecac3a310
+type: Request
+parentId: fld_7e9586dd1f6f4bbfa4423b3b158dd517
+modified: 1660668490401
+created: 1660668178960
+url: http://localhost:3000/api/nurseries/search/a
+name: Find Product by Name
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660232160394
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

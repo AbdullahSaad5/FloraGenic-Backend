@@ -1,0 +1,21 @@
+_id: req_c624bb86f5164211a513852acf3fee7a
+type: Request
+parentId: fld_7e9586dd1f6f4bbfa4423b3b158dd517
+modified: 1660668483415
+created: 1660668178958
+url: http://localhost:3000/api/nurseries/62fbc9cfaf1e4a3d839b26b0
+name: Delete Specific Product
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660230442540
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

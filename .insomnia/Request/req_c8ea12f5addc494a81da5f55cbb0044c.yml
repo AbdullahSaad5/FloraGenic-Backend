@@ -1,0 +1,29 @@
+_id: req_c8ea12f5addc494a81da5f55cbb0044c
+type: Request
+parentId: fld_7a9ac5ffd9eb46469531fb70fb6a3f4d
+modified: 1660664981552
+created: 1660584003482
+url: http://localhost:3000/api/address/62fa7deb6746fd74f53d39e0
+name: Update an Address of a Customer
+description: ""
+method: PATCH
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"city" : "Rawalpindi"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_118355e6d208440f8d6d535af4e5ee6a
+authentication: {}
+metaSortKey: -1660584003482
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

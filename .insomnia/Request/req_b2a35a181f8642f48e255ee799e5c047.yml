@@ -1,0 +1,21 @@
+_id: req_b2a35a181f8642f48e255ee799e5c047
+type: Request
+parentId: fld_9362858a81024d20a666de019f0cd594
+modified: 1660722466056
+created: 1660721872025
+url: http://localhost:3000/api/tags/62fc9ce8258514d615adcc30
+name: Delete Specific Tag
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660230442540
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

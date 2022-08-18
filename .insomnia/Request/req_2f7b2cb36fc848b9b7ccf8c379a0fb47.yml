@@ -1,0 +1,21 @@
+_id: req_2f7b2cb36fc848b9b7ccf8c379a0fb47
+type: Request
+parentId: fld_b56cf88b3d594d3f88282abbcff5572b
+modified: 1660232545468
+created: 1660232160394
+url: http://localhost:3000/api/customer/search/abdullah
+name: Find Customer by Name
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660232160394
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

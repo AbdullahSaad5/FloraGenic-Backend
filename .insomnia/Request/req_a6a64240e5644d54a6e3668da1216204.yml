@@ -1,0 +1,31 @@
+_id: req_a6a64240e5644d54a6e3668da1216204
+type: Request
+parentId: fld_8692c53aa1c84f1984a7870d132f2f60
+modified: 1660659907274
+created: 1660648500525
+url: http://localhost:3000/api/cart/62f68d8c419c49c73e04f9cc
+name: Add a Cart Item
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+       	"productID": "62fb6f4ba2e5e011b4564a71",
+    		"quantity" : 1,
+    		"totalPrice": 500
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7c0d63c59a7b49d7998dc036f6ac70c8
+authentication: {}
+metaSortKey: -1660212105593
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

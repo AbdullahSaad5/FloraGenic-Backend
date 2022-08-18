@@ -1,0 +1,21 @@
+_id: req_6308b624c35e4df5a2ef6dd14e2a4347
+type: Request
+parentId: fld_5800c5e3c9994b07827513f01c236bcb
+modified: 1660825497524
+created: 1660738993680
+url: http://localhost:3000/api/gardeners/62fe2f74a6ef92dd76c4a967
+name: Delete Specific Customer
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660230442540
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

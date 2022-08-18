@@ -1,0 +1,29 @@
+_id: req_6350728350ca4410a304b28e69ecc32b
+type: Request
+parentId: fld_b56cf88b3d594d3f88282abbcff5572b
+modified: 1660639742017
+created: 1660213933268
+url: http://localhost:3000/api/customer/62f68d8c419c49c73e04f9cc
+name: Update Specific Customer
+description: ""
+method: PATCH
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "name": "Syed Abdullah Saad"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_138c9278a74640318f1d407ffe9c128b
+authentication: {}
+metaSortKey: -1660213933268
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

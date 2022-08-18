@@ -1,0 +1,21 @@
+_id: req_c32e986fdff1427f830fcde710badebc
+type: Request
+parentId: fld_5800c5e3c9994b07827513f01c236bcb
+modified: 1660825152946
+created: 1660738993682
+url: http://localhost:3000/api/gardeners/search/abdullah
+name: Find Customer by Name
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660232160394
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

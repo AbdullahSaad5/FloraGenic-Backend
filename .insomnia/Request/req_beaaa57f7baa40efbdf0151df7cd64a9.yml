@@ -1,0 +1,21 @@
+_id: req_beaaa57f7baa40efbdf0151df7cd64a9
+type: Request
+parentId: fld_565ff66ca3354eb9ab64f36b1f607bbb
+modified: 1660722708153
+created: 1660722610567
+url: http://localhost:3000/api/skills/62fc9df522b663a71a60bda5
+name: Delete Specific Skill
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660230442540
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

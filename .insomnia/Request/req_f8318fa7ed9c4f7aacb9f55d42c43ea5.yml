@@ -1,0 +1,21 @@
+_id: req_f8318fa7ed9c4f7aacb9f55d42c43ea5
+type: Request
+parentId: fld_565ff66ca3354eb9ab64f36b1f607bbb
+modified: 1660722722254
+created: 1660722610569
+url: http://localhost:3000/api/skills/search/s
+name: Find Skills by Name
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660212210191
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

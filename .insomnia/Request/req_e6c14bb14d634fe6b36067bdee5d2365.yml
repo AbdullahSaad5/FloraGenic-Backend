@@ -1,0 +1,21 @@
+_id: req_e6c14bb14d634fe6b36067bdee5d2365
+type: Request
+parentId: fld_0942bd717a9f448990c6dc6cda9fd45d
+modified: 1660571639468
+created: 1660558136702
+url: http://localhost:3000/api/admin/62fa252deaca1009544d8563
+name: Delete Specific Admin
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660231301417
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

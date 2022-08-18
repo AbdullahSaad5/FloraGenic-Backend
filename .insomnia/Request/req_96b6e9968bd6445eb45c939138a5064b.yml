@@ -1,0 +1,29 @@
+_id: req_96b6e9968bd6445eb45c939138a5064b
+type: Request
+parentId: fld_565ff66ca3354eb9ab64f36b1f607bbb
+modified: 1660722738013
+created: 1660722610566
+url: http://localhost:3000/api/skills/62fc9e1d22b663a71a60bdaa
+name: Update Specific Skill
+description: ""
+method: PATCH
+body:
+  mimeType: application/json
+  text: |-
+    {
+    		"name" : "Gardening"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_138c9278a74640318f1d407ffe9c128b
+authentication: {}
+metaSortKey: -1660213933268
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

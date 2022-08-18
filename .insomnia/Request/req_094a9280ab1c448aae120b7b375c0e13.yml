@@ -1,0 +1,29 @@
+_id: req_094a9280ab1c448aae120b7b375c0e13
+type: Request
+parentId: fld_9362858a81024d20a666de019f0cd594
+modified: 1660722594218
+created: 1660721872020
+url: http://localhost:3000/api/tags/
+name: Add a Tag
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    		"name": "Tag 1"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7c0d63c59a7b49d7998dc036f6ac70c8
+authentication: {}
+metaSortKey: -1660212105593
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

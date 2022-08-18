@@ -1,0 +1,29 @@
+_id: req_2206ce9551ae4ab1b8bee31fa5f0c369
+type: Request
+parentId: fld_d8e42338e3dd41aab253f0d68cf5a64a
+modified: 1660645503473
+created: 1660639737603
+url: http://localhost:3000/api/products/62fb6f4ba2e5e011b4564a71
+name: Update Specific Product
+description: ""
+method: PATCH
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "name": "Money Plant"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_138c9278a74640318f1d407ffe9c128b
+authentication: {}
+metaSortKey: -1660213933268
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

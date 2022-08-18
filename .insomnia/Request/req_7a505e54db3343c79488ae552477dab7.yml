@@ -1,0 +1,21 @@
+_id: req_7a505e54db3343c79488ae552477dab7
+type: Request
+parentId: fld_565ff66ca3354eb9ab64f36b1f607bbb
+modified: 1660722637486
+created: 1660722610564
+url: http://localhost:3000/api/skills/
+name: Get All Skills
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660212314789
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

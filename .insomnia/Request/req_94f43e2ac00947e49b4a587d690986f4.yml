@@ -1,0 +1,21 @@
+_id: req_94f43e2ac00947e49b4a587d690986f4
+type: Request
+parentId: fld_7a9ac5ffd9eb46469531fb70fb6a3f4d
+modified: 1660664990955
+created: 1660584126710
+url: http://localhost:3000/api/address/62f68d8c419c49c73e04f9cc/62fa80ad969f9a9eac2f87f0
+name: Delete a Customer's Address
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660584126710
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,33 @@
+_id: req_f812898e5e44413f981b3f9eb1acacc0
+type: Request
+parentId: fld_5800c5e3c9994b07827513f01c236bcb
+modified: 1660825538256
+created: 1660738993661
+url: http://localhost:3000/api/gardeners/
+name: Add Customer
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "userID" : "62f68968547b15cc3ea16801",
+        "name": "Syed Abdullah Saad",
+        "phone": "+92 3315406921",
+        "CNIC": "1234567891012",
+        "services": []
+      }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7c0d63c59a7b49d7998dc036f6ac70c8
+authentication: {}
+metaSortKey: -1660212314739
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

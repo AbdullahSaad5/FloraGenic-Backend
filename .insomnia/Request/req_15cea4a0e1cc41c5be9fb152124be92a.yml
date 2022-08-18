@@ -1,0 +1,21 @@
+_id: req_15cea4a0e1cc41c5be9fb152124be92a
+type: Request
+parentId: fld_d8e42338e3dd41aab253f0d68cf5a64a
+modified: 1660645528386
+created: 1660639737606
+url: http://localhost:3000/api/products/search/money
+name: Find Product by Name
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660232160394
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

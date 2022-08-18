@@ -1,0 +1,21 @@
+_id: req_48bf02ed19f847c8bbf639d7bf263856
+type: Request
+parentId: fld_8692c53aa1c84f1984a7870d132f2f60
+modified: 1660665004595
+created: 1660648500534
+url: http://localhost:3000/api/cart/62f68d8c419c49c73e04f9cc/62fb6f4ba2e5e011b4564a71
+name: Delete Specific Cart Item
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660230442540
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

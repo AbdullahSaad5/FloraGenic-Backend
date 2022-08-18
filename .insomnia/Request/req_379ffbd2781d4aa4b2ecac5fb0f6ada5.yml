@@ -1,0 +1,21 @@
+_id: req_379ffbd2781d4aa4b2ecac5fb0f6ada5
+type: Request
+parentId: fld_0942bd717a9f448990c6dc6cda9fd45d
+modified: 1660560743110
+created: 1660558151857
+url: http://localhost:3000/api/admin/62fa252deaca1009544d8563
+name: Get Specific Admin
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660231301367
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

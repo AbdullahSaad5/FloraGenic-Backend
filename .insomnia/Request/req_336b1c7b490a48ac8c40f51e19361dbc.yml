@@ -1,0 +1,21 @@
+_id: req_336b1c7b490a48ac8c40f51e19361dbc
+type: Request
+parentId: fld_b56cf88b3d594d3f88282abbcff5572b
+modified: 1660560168211
+created: 1660213843243
+url: http://localhost:3000/api/customer/62f68d8c419c49c73e04f9cc
+name: Get Specific Customer
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660213843243
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,31 @@
+_id: req_0414f718e4f546b89ab49bae1545ac53
+type: Request
+parentId: fld_565ff66ca3354eb9ab64f36b1f607bbb
+modified: 1660722744335
+created: 1660722610562
+url: http://localhost:3000/api/skills/
+name: Add a Skill
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    		"name": "Skill 1",
+    		"description": "ABC",
+    		"experienceLevel": "Beginner"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7c0d63c59a7b49d7998dc036f6ac70c8
+authentication: {}
+metaSortKey: -1660212105593
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

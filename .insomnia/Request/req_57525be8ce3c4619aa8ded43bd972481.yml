@@ -1,0 +1,29 @@
+_id: req_57525be8ce3c4619aa8ded43bd972481
+type: Request
+parentId: fld_8692c53aa1c84f1984a7870d132f2f60
+modified: 1660665009490
+created: 1660648500533
+url: http://localhost:3000/api/cart/62f68d8c419c49c73e04f9cc/62fb6f4ba2e5e011b4564a71
+name: Update Specific Cart Item
+description: ""
+method: PATCH
+body:
+  mimeType: application/json
+  text: |-
+    {
+    		"quantity" : 3
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_138c9278a74640318f1d407ffe9c128b
+authentication: {}
+metaSortKey: -1660213933268
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

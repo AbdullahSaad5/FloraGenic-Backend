@@ -1,0 +1,36 @@
+_id: req_df84842e0f2b4350ad29554490430fc4
+type: Request
+parentId: fld_b56cf88b3d594d3f88282abbcff5572b
+modified: 1660639742826
+created: 1660212105593
+url: http://localhost:3000/api/customer/
+name: Add Customer
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "userID" : "62f68968547b15cc3ea16801",
+        "name": "Syed Abdullah Saad",
+        "dob": "02-23-2001",
+        "nationality": "Pakistan",
+        "phoneNumber": "+92 3315406920",
+        "gender": "Male",
+        "addresses": [],
+        "payments": []
+      }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7c0d63c59a7b49d7998dc036f6ac70c8
+authentication: {}
+metaSortKey: -1660212105593
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

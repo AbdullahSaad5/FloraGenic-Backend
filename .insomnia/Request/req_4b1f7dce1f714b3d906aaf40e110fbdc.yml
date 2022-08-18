@@ -1,0 +1,33 @@
+_id: req_4b1f7dce1f714b3d906aaf40e110fbdc
+type: Request
+parentId: fld_7e9586dd1f6f4bbfa4423b3b158dd517
+modified: 1660668402036
+created: 1660668178938
+url: "http://localhost:3000/api/nurseries/ "
+name: Add a Product
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "name" : "ABC",
+        "details" : "Hello World",
+        "address" : "123 St 1",
+        "openingHours" : "1100",
+        "closingHours" : "2100"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7c0d63c59a7b49d7998dc036f6ac70c8
+authentication: {}
+metaSortKey: -1660212105593
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

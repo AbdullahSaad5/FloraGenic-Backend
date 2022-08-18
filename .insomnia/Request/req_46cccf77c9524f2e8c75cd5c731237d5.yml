@@ -1,0 +1,30 @@
+_id: req_46cccf77c9524f2e8c75cd5c731237d5
+type: Request
+parentId: fld_0942bd717a9f448990c6dc6cda9fd45d
+modified: 1660570292002
+created: 1660558142587
+url: http://localhost:3000/api/admin/62fa252deaca1009544d8563
+name: Update Specific Admin
+description: ""
+method: PATCH
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "name": "Syed Abdullah Saad",
+    		"phone":"923112962274"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_138c9278a74640318f1d407ffe9c128b
+authentication: {}
+metaSortKey: -1660231301442
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

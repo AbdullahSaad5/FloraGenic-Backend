@@ -1,0 +1,35 @@
+_id: req_ee8643a0e2024fe3b5c942ab6b08e0e4
+type: Request
+parentId: fld_6d7a8f6a9ed84cfa9ef34468aea925c8
+modified: 1660738674397
+created: 1653120998109
+url: http://localhost:3000/api/auth/login
+name: Login
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email":"syedabdullahsaad1@gmail.com",
+    	"password":"12345678"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_fbf060ab71cc4599aca87e019577f357
+  - id: pair_07b65bf3244749a28b0718c9a1c9a1f5
+    name: Authorization
+    value: Bearer
+      eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZWQ0N2Y4ZDQ2MjJlNTQwOTM0NzAxOCIsImVtYWlsIjoic3llZGFiZHVsbGFoc2FhZDFAZ21haWwuY29tIiwiYmFubmVkU3RhdHVzIjpmYWxzZSwiaWF0IjoxNjU5NzkzMTUwfQ.RuGGhnqdIsHrSMYTXcCPfdHIPP8_eiZIUdQY8WCL_b4
+    description: ""
+authentication: {}
+metaSortKey: -1659864568622
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

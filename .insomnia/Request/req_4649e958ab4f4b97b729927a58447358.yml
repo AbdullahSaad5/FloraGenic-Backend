@@ -1,0 +1,21 @@
+_id: req_4649e958ab4f4b97b729927a58447358
+type: Request
+parentId: fld_8692c53aa1c84f1984a7870d132f2f60
+modified: 1660659756924
+created: 1660648500529
+url: http://localhost:3000/api/cart/62f68d8c419c49c73e04f9cc
+name: Get All Cart Items of a Customer
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660212314789
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,35 @@
+_id: req_4d50a3ce995248e89d21c4c2b8dd6633
+type: Request
+parentId: fld_d8e42338e3dd41aab253f0d68cf5a64a
+modified: 1660645497194
+created: 1660639737596
+url: "http://localhost:3000/api/products/ "
+name: Add a Product
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "nurseryID" : "62f68968547b15cc3ea16801",
+        "name": "Money Plant",
+        "price": 500,
+        "description": "Pakistan",
+        "category": "+92 3315406920",
+        "stock": 10,
+    		"image":"http://localhost:3000/"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7c0d63c59a7b49d7998dc036f6ac70c8
+authentication: {}
+metaSortKey: -1660212105593
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,32 @@
+_id: req_821c6934d4e542009b58aed06c9de511
+type: Request
+parentId: fld_7a9ac5ffd9eb46469531fb70fb6a3f4d
+modified: 1660664966427
+created: 1660582298481
+url: http://localhost:3000/api/address/62f68d8c419c49c73e04f9cc
+name: Add New Address to Customer
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name" : "Home",
+    	"location" : "House No. 215, Street No. 11, Pakistan Town Phase 1",
+    	"city" : "Islamabad",
+    	"setAsDefault":"true"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_147c4e35c16844f2b4070062dc1fc6d6
+authentication: {}
+metaSortKey: -1660582298481
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

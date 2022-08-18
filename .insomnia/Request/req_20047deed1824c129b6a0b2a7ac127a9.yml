@@ -1,0 +1,31 @@
+_id: req_20047deed1824c129b6a0b2a7ac127a9
+type: Request
+parentId: fld_6d7a8f6a9ed84cfa9ef34468aea925c8
+modified: 1660736613587
+created: 1659864568572
+url: http://localhost:3000/api/auth/signup
+name: Sign Up
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email":"syedabdullahsaad2@gmail.com",
+    	"password":"12345678",
+    	"userType":"admin"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_e091ab33815344568c991a70d75a24d3
+authentication: {}
+metaSortKey: -1659864568572
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

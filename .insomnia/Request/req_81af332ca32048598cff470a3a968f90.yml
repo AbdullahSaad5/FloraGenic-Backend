@@ -1,0 +1,21 @@
+_id: req_81af332ca32048598cff470a3a968f90
+type: Request
+parentId: fld_7e9586dd1f6f4bbfa4423b3b158dd517
+modified: 1660668412948
+created: 1660668178953
+url: http://localhost:3000/api/nurseries/62fbc9cfaf1e4a3d839b26b0
+name: Get Specific Product
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660213843243
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

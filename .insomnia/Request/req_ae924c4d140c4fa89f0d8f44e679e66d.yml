@@ -1,0 +1,29 @@
+_id: req_ae924c4d140c4fa89f0d8f44e679e66d
+type: Request
+parentId: fld_9362858a81024d20a666de019f0cd594
+modified: 1660722596462
+created: 1660721872024
+url: http://localhost:3000/api/tags/62fc9c69b5dd811c2e0f09b3
+name: Update Specific Tag
+description: ""
+method: PATCH
+body:
+  mimeType: application/json
+  text: |-
+    {
+    		"name" : "Tag 2"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_138c9278a74640318f1d407ffe9c128b
+authentication: {}
+metaSortKey: -1660213933268
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

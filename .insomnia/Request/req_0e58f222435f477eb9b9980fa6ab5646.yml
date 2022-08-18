@@ -1,0 +1,29 @@
+_id: req_0e58f222435f477eb9b9980fa6ab5646
+type: Request
+parentId: fld_7e9586dd1f6f4bbfa4423b3b158dd517
+modified: 1660668446105
+created: 1660668178956
+url: http://localhost:3000/api/nurseries/62fbc9cfaf1e4a3d839b26b0
+name: Update Specific Product
+description: ""
+method: PATCH
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "contactNumber": "923315406920"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_138c9278a74640318f1d407ffe9c128b
+authentication: {}
+metaSortKey: -1660213933268
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

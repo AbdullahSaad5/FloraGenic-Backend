@@ -1,0 +1,27 @@
+_id: req_3f556856de9b4dbebbb184288af7e3d5
+type: Request
+parentId: fld_b56cf88b3d594d3f88282abbcff5572b
+modified: 1660715316124
+created: 1660212314789
+url: "http://localhost:3000/api/customer/ "
+name: Get All Customers
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_b975a30462ea45d6b8cee643adb7378a
+    name: Authorization
+    value: Bearer
+      eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZjY4OTY4NTQ3YjE1Y2MzZWExNjgwMSIsImVtYWlsIjoic3llZGFiZHVsbGFoc2FhZDFAZ21haWwuY29tIiwiYmFubmVkU3RhdHVzIjpmYWxzZSwidXNlclR5cGUiOiJjdXN0b21lciIsImlhdCI6MTY2MDcxNTA4MH0.UowTZGk5kX9s2Rg3Ec2ToLdpCWcEgXJNidwPiktpzoU
+    description: ""
+    disabled: false
+authentication: {}
+metaSortKey: -1660212314789
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

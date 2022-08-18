@@ -1,0 +1,21 @@
+_id: req_86a41d2bfa104c768e00ea6c8e5e4f93
+type: Request
+parentId: fld_0942bd717a9f448990c6dc6cda9fd45d
+modified: 1660559783609
+created: 1660558158894
+url: "http://localhost:3000/api/admin/ "
+name: Get All Admin
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660231301317
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

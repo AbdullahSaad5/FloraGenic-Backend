@@ -1,0 +1,21 @@
+_id: req_0ad8b8733f774f2b850578697dff712e
+type: Request
+parentId: fld_9362858a81024d20a666de019f0cd594
+modified: 1660722512884
+created: 1660722491791
+url: http://localhost:3000/api/tags/search/ta
+name: Find Tags by Name
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660212210191
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

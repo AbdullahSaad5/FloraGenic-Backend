@@ -1,0 +1,32 @@
+_id: req_1027c58c7f564d728ea040405f3a7037
+type: Request
+parentId: fld_0942bd717a9f448990c6dc6cda9fd45d
+modified: 1660560746922
+created: 1660558164585
+url: http://localhost:3000/api/admin/
+name: Add Admin
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "userID" : "62fa249734b85fa7f060532e",
+        "name": "Syed Abdullah Saad",
+        "phone": "923315406920",
+    		"CNIC":"1234567891011"
+      }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7c0d63c59a7b49d7998dc036f6ac70c8
+authentication: {}
+metaSortKey: -1660231301267
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

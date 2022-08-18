@@ -1,0 +1,21 @@
+_id: req_9706c0a38026467f982904c77b038625
+type: Request
+parentId: fld_5800c5e3c9994b07827513f01c236bcb
+modified: 1660825292702
+created: 1660738993675
+url: http://localhost:3000/api/gardeners/62fe2eaf176a464a3aa5597c
+name: Get Specific Customer
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660213843243
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
