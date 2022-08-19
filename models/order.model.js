@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const orderSchema = new Schema({
-  userId: {
+  customerID: {
     type: Schema.Types.ObjectId,
     ref: "User",
     required: true,
@@ -32,8 +32,23 @@ const orderSchema = new Schema({
     type: Number,
     required: true,
   },
-  date: {
+  shippingAddress: {
+    type: String,
+    required: true,
+  },
+  orderingDate: {
     type: Date,
+    default: Date.now,
+    immutable: true,
+  },
+  shipmentDate: {
+    type: Date,
+    default: null,
+    required: true,
+  },
+  receivedDate: {
+    type: Date,
+    default: null,
     default: Date.now,
   },
   paymentID: {

@@ -2,15 +2,19 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const favoriteSchema = new Schema({
-  productId: {
+  productID: {
     type: Schema.Types.ObjectId,
     ref: "Product",
     required: true,
   },
-  userId: {
+  userID: {
     type: Schema.Types.ObjectId,
     ref: "User",
     required: true,
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now,
   },
 });
 

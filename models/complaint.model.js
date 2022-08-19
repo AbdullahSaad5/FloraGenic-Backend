@@ -10,6 +10,10 @@ const complaintSchema = new Schema({
     type: String,
     required: true,
   },
+  title: {
+    type: String,
+    required: true,
+  },
   description: {
     type: String,
     required: true,
@@ -17,5 +21,12 @@ const complaintSchema = new Schema({
   date: {
     type: Date,
     default: Date.now,
+    immutable: true,
+  },
+  read: {
+    type: Boolean,
+    default: false,
   },
 });
+
+module.exports = mongoose.model("Complaint", complaintSchema);
