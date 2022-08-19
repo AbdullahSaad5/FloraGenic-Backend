@@ -15,7 +15,7 @@ router.get("/", function (req, res, next) {
   res.send("respond with a resource");
 });
 router.use("/auth", authRouter);
-router.use("/customer", customerRouter);
+router.use("/customers", customerRouter);
 router.use("/admin", adminRouter);
 router.use("/address", addressRouter);
 router.use("/products", productRouter);

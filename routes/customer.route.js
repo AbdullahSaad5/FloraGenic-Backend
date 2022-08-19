@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Customer = require("../models/customer.model");
+const User = require("../models/user.model");
 
 /* GET all customers with their auth data. */
 router.get("/", function (req, res, next) {
@@ -58,6 +59,8 @@ router.post("/", (req, res, next) => {
       return next("User is not customer");
     }
 
+    console.log(user);
+
     const { userID, name, dob, nationality, phoneNumber, gender } = req.body;
 
     const customer = new Customer({
@@ -73,7 +76,6 @@ router.post("/", (req, res, next) => {
 
     customer.save((err, customer) => {
       if (err) {
-        console.log(err);
         return next(err);
       }
       res.json(customer);
